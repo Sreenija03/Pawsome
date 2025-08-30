@@ -90,8 +90,8 @@ We're committed to continuously improving Pawsome with several key initiatives:
 ## Getting Started
 1. Clone repo
 ```
-git clone https://github.com/mounika2000/treehacks.git
-cd Treehacks
+git clone https://github.com/Sreenija03/Pawsome.git
+cd Pawsome
 yarn
 ```
 2. Install dependencies <br/>
@@ -105,11 +105,6 @@ yarn
 
 Contributions are welcome! Whether you're a developer, designer, or pet wellness enthusiast, there are many ways to contribute to Pawsome. Please see our contributing guidelines for more details.
 
-## Contact Us
 
-Sai Mounika Peteti: saimounika.peteti@sjsu.edu  <br/>
-Chinmay Nilesh Mahagaonkar: chinmaynilesh.mahagaonkar@sjsu.edu <br/>
-Sanket Kulkarni: sanket.kulkarni@sjsu.edu <br/>
-Tanay Godse: tanay.godse@sjsu.edu
 
 
