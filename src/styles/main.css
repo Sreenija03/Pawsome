@@ -1,0 +1,259 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --color-primary: #ec4755;
+  --color-secondary: #a12c34;
+  --color-tertiaty: #99a0a3;
+}
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.popup-label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.popup-date-input,
+.popup-time-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.popup-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.popup-confirm-btn,
+.popup-close-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.popup-confirm-btn {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.popup-close-btn {
+  background-color: #a12c34; /* Red */
+  color: white;
+}
+
+a { 
+  @apply text-red-700;
+}
+
+a:hover {
+  @apply border-b-2 border-red-700;
+}
+
+
+
+.content p {
+  @apply my-6;
+}
+
+.content ul {
+  @apply my-6;
+}
+
+.quote-section {
+ 
+
+  background-color: #ffd7d0;
+  
+  color: #1d3557;
+  height: 128px; /* Or any other value */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quote-text {
+  font-family: 'Your font family', serif;
+  font-size: 1.125rem; /* 18px */
+  /* Adjust font-size for larger devices */
+  @media (min-width: 768px) {
+    font-size: 1.25rem; /* 20px */
+  }
+}
+
+/* src/components/Chatbot.css */
+
+.chatbot-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-button {
+  /* ... other styles ... */
+  border: none; /* Remove border */
+  border-radius: 50%; /* Make it round */
+  background-color: #fff; /* Set the desired background color, white for example */
+  /* Ensure the width and height are the same to make it a circle */
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2); /* Optional: adds a slight shadow for depth */
+}
+
+.chatbot-button img {
+  /* Adjust the size of the image if necessary */
+  width: auto; /* maintain the aspect ratio */
+  height: 80%; /* adjust based on your needs, 80% of the button's height */
+  border-radius: 50%; /* Make the image round */
+}
+
+.chatbot-window {
+  /* Style your chat window here */
+  position: absolute;
+  bottom: 60px; /* Adjust based on the size of your button */
+  right: 0;
+  width: 600px;
+  height: 800px;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  padding: 10px;
+  background-color:  #e74452;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* .chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: auto;
+} */
+
+.chat-messages {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+  flex-grow: 1; /* Takes up available space between header and input */
+}
+
+.message-bubble {
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.user-message {
+  align-self: flex-end;
+  background-color: #e74452; /* Your brand color for the user */
+  color: white;
+}
+
+.bot-message {
+  align-self: flex-start;
+  background-color: #f1f1f1; /* A light color for the bot */
+  color: black;
+}
+
+.bot-message ul {
+  padding-left: 20px; /* Adjust the padding to align list items properly */
+  margin: 0;
+  list-style-type: disc; /* This will create bullets for list items */
+}
+
+
+
+.chat-input-container {
+  border-top: 1px solid #ddd;
+  padding: 10px;
+  display: flex;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.send-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chatbot-window {
+  /* ...existing styles... */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures the input box stays at the bottom */
+}
+
+.vertical-timeline::before {
+  /* Change the timeline line color */
+  background: rgb(233, 30, 99) !important;
+}
+.vertical-timeline-element-content:hover,
+.vertical-timeline-element-content:hover .vertical-timeline-element-title,
+.vertical-timeline-element-content:hover .vertical-timeline-element-subtitle,
+.vertical-timeline-element-content:hover p {
+  /* Change the text color on hover */
+  color: rgb(233, 30, 99) !important;
+}
+.vertical-timeline-element-icon:hover {
+  /* Change the icon background color on hover */
+  background: rgb(233, 30, 99) !important;
+}
+
+.book-appointment-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
